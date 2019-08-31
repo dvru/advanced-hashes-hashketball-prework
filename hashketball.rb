@@ -167,7 +167,6 @@ answer
 end
 
 def team_colors(team)
-
   game_hash.values.each do |team_info|
     if team_info.has_value?(team) 
       return team_info[:colors].map(&:capitalize)
@@ -177,7 +176,6 @@ end
 
 def team_names
   game_hash.values.map {|value| value[:team_name]}
-
 end
 
 def player_numbers(team)
